@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    /* background-color: #fff; */
+    background-color: #fbfbfb;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    /* z-index: 6; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-weight: 400;    
+    font-size: 16px;
+    color: #1F1F24;
+}
+
+.header__nav-link {
+    /* border: 0px solid orange; */
+    transition: color .3s ease;
+    /* transition: border .9s ease; */
+}
+
+.header__nav-link:hover {
+    color: orange;
+    /* border: 1px solid orange; */
+}
+
+.header__contacs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tel {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 25px;
+    color: #1F1F24;
+}
+
+.header__link {
+    padding: 15px 40px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    /* color: #f53f4f; */
+    color: orange;
+    /* border: 1px solid #f53f4f; */
+    border: 1px solid orange;
+    background-color: inherit;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+}
+
+.header__link:hover {
+    color: #fff;
+    background-color: orange;
+}
+
+@media (max-width: 1000px) {
+    .header__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header__link {
+        padding: 15px 40px;
+    }
+}
+
+.header-mobile__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-mobile__burger-btn {
+    position: relative;
+    width: 30px;
+    height: 23px;
+}
+
+.header-mobile__burger-layer {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255,124,0,1) 0%, rgba(118,9,121,1) 35%, rgba(0,14,255,1) 100%);
+}
+
+.header-mobile__burger-layer-1 {
+    
+}
+
+.header-mobile__burger-layer-2 {
+    top: 10px;
+}
+
+.header-mobile__burger-layer-3 {
+    bottom: 0px;
+}
+
+.header-mobile__tel {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18px;
+    color: #1F1F24;
+}

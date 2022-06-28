@@ -1,0 +1,33 @@
+.section-price {
+    background-image: linear-gradient(90deg, rgba(255,124,0,1) 0%, rgba(118,9,121,1) 35%, rgba(0,14,255,1) 100%);
+}
+
+.section-price__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-price__title {
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+}
+
+.section-price__list {
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #fff;
+}
+
+.section-price__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.section-price__span {
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #fff;
+}

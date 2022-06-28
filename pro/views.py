@@ -56,4 +56,4 @@ def email(request):
                 pass
     else:
         form = ContactForm()
-    return render(request, 'pro/email.html', {"form": form})
+    return render(request, 'pro/form-email.html', {"form": form})

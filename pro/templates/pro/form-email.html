@@ -1,0 +1,33 @@
+<form method="post">
+  {% csrf_token %}
+  {% for f in form %}
+  <p><label class="col-10 col-sm-10 footer__input-email" for="f.id_for_label">{{f.label}}</label>{{f}}</p>
+  {% endfor %}
+  <button type="submit" class="footer__submit">Отправить</button>
+</form>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="staticcss/normalize.css">
+    <link rel="stylesheet" href="static/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="static/css/form-page.css">
+</head>
+<body>
+    <section class="container-sm">
+        <form method="post" class="row form__container">
+            <h3 class="col-7 col-sm-7 footer__title">Оставить заявку</h3>
+            <input class="col-10 col-sm-10 footer__input-email" type="text" name="email" placeholder="E-mail*">
+            <textarea class="col-10 col-sm-10 footer__textarea" name="message" placeholder="Сообщение"></textarea>
+            <div class="footer__bottom">
+                <input class="footer__submit" type="submit" value="Отправить данные">
+              </div>
+        </form>
+    </section>
+</body> чувак, что делать?
+</html>  ща подумаю
+-->

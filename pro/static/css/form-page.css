@@ -1,0 +1,117 @@
+@import url(fonts.css);
+@import url(style-init.css);
+
+.form__container {
+    margin-top: 150px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #222222;
+    box-shadow: 0px 0px 32px 6px rgba(34, 60, 80, 0.2);
+}
+
+.footer__textarea {
+    resize: none;
+}
+
+.footer__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #cacaca;
+  }
+  
+  .footer__input-name,
+  .footer__input-phone,
+  .footer__input-email,
+  .footer__textarea {
+    padding: 14px 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #cacaca;
+    outline: none;
+    border: none;
+    background-color: #414141;
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+  
+  .footer__input-name::-webkit-input-placeholder,
+  .footer__input-phone::-webkit-input-placeholder,
+  .footer__input-email::-webkit-input-placeholder,
+  .footer__textarea::-webkit-input-placeholder {
+    color: #cacaca;
+  }
+  
+  .footer__input-name:hover,
+  .footer__input-email:hover,
+  .footer__input-phone:hover,
+  .footer__textarea:hover,
+  .footer__input-name:focus,
+  .footer__input-email:focus,
+  .footer__input-phone:focus,
+  .footer__textarea:focus {
+    background-color: #666666;
+  }
+  
+  .footer__input-name:active,
+  .footer__input-email:active,
+  .footer__input-phone:active,
+  .footer__textarea:active {
+    background-color: #666666;
+    color: #ffffff;
+  }
+  
+  .footer__input-name ,
+  .footer__input-email,
+  .footer__input-phone {
+    margin-bottom: 25px;
+  }
+  
+  .footer__textarea {
+    height: 150px;
+    margin-bottom: 32px;
+    resize: none;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .footer__submit {
+    margin-right: 17px;
+    width: 269px;
+    height: 58px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #ff9900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+  
+  .footer__submit:hover,
+  .footer__submit:focus {
+    background-color: #f7b045;
+  }
+  
+  .footer__submit:active {
+    background-color: #e1670e;
+  }
+
+  @media (max-width: 570px) {
+    .form__container {
+        min-height: 100vh;
+        margin-top: 0;
+    }
+  }
