@@ -1,85 +1,83 @@
 .section-services {
-    background-color: var(--services);
+  background-color: var(--services);
 }
 
 .section-services__container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 95px;
-    padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .section-services__title {
-    margin-bottom: 75px;
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: bold;
-    font-size: 54px;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 54px;
 }
 
 .section-services__list {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .section-services__item-block {
-    display: flex;
-    flex-direction: column;
-    color: #8993ad;
-    font-family: 'Roboto';
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #8993ad;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 .section-services__item-img {
-    align-self: center;
-    margin-bottom: 20px;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .section-services__item-text {
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 20px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 .section-services__link {
-    align-self: center;
-    padding: 22px 55px;
-    font-family: "Roboto";
-    font-size: 18px;
-    color: #fff;
-    background-color: orange;
-    border: 1px solid orange;
-    transition: background-color 1s ease;
-    transition: color 1s ease;
+  align-self: center;
+  padding: 22px 55px;
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #fff;
+  background-color: orange;
+  border: 1px solid orange;
+  transition: background-color 1s ease;
+  transition: color 1s ease;
 }
 
 .section-services__link:hover {
-    color: orange;
-    background-color: #fff;
-    
+  color: orange;
+  background-color: #fff;
 }
 
 @media (max-width: 1200px) {
-    .section-services__item-block {
-        padding: 0 70px;
-        margin-bottom: 70px;
-    }
+  .section-services__item-block {
+    padding: 0 70px;
+    margin-bottom: 70px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .section-services__item-block {
-        padding: 0 90px;
-        margin-bottom: 45px;
-    }
+  .section-services__item-block {
+    padding: 0 90px;
+    margin-bottom: 45px;
+  }
 
-    .section-services__item-block:not(:last-child) {
-        margin-bottom: 45px;
-    }
+  .section-services__item-block:not(:last-child) {
+    margin-bottom: 45px;
+  }
 }
 
 @media (max-width: 500px) {
-    .section-services__item-block {
-        padding: 0 40px;
-        margin-bottom: 45px;
-    }
-
+  .section-services__item-block {
+    padding: 0 40px;
+    margin-bottom: 45px;
+  }
 }

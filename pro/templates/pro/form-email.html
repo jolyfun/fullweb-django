@@ -1,10 +1,38 @@
-<form method="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/normalize.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../static/css/form-page.css">
+</head>
+<body>
+  <section class="container-sm">
+<form method="post" class="row form__container">
   {% csrf_token %}
+  <h3 class="col-7 col-sm-7 footer__title">Оставить заявку</h3>
+<div>{{form.non_field_errors}}</div>
+<!-- запомни, никогда не делай так, только js!!!!!!!!! ок  -->
+
   {% for f in form %}
-  <p><label class="col-10 col-sm-10 footer__input-email" for="f.id_for_label">{{f.label}}</label>{{f}}</p>
+  
+  <p>
+    <div class="footer__input-email-wrap">
+      <label class="col-10 col-sm-10 footer__input-email" for="f.id_for_label">{{f.label}}</label>{{f}}  
+    </label>
+    </div>
+  </p>
+  <div>{{f.errors}}</div>
   {% endfor %}
-  <button type="submit" class="footer__submit">Отправить</button>
+  <div class="footer__bottom">
+    <input class="footer__submit" type="submit" value="Отправить данные">
+  </div>
 </form>
+</section>
+</body>
 
 <!-- <!DOCTYPE html>
 <html lang="en">

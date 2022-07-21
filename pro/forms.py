@@ -1,26 +1,20 @@
-import email
-from django.contrib.auth.forms import AuthenticationForm
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import *
 
-class RegisterForm(UserCreationForm):
-    username = forms.CharField(label="Логин/Login", widget = forms.TextInput(attrs={'class': 'form-control'}))
-    email = forms.EmailField(label="Почта/Email", widget = forms.TextInput(attrs={'class': 'form-control'}))
-    password1 = forms.CharField(label="Password/Пароль", widget = forms.PasswordInput(attrs={'class': 'form-control'}))
-    password2 = forms.CharField(label="(Повтор) Password/Пароль", widget = forms.PasswordInput(attrs={'class': 'form-control'}))
-
+class RegisterForm(forms.ModelForm):
     class Meta:
-        model = User
-        fields = ('username', 'email', 'password1', 'password2')
-
-class LoginForm(AuthenticationForm):
-    username = forms.CharField(label="Логин/Login", widget = forms.TextInput(attrs={'class': 'form-control'}))
-    password = forms.CharField(label="Пароль/Password", widget = forms.PasswordInput(attrs={'class': 'form-control'}))
+        model = News
+        fields = ['number'] # Сделать так, чтобы пользователь смог вводить своё значение в number 
 
 class ContactForm(forms.Form):
     email = forms.CharField(label="Ваш email",
-    widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    widget=forms.EmailInput(attrs={'class': 'form-control footer__input-email'}))
 
     content = forms.CharField(label="Ваша заявка или предложение",
-    widget=forms.Textarea(attrs={'class': 'form-control'}))
+    widget=forms.Textarea(attrs={'class': 'form-control footer__textarea'}))
+
+"""
+эта форма отвечает за отправку имейлов
+"""
